@@ -41,3 +41,4 @@ def test_get_games():
 
     assert response.status_code == 200
     assert len(response.data) == 1
+    assert response.data[0]['name'] == "Minecraft"
